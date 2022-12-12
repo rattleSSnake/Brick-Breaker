@@ -120,7 +120,6 @@ class Game:
         self.player = Player()
         self.bricks = Bricks()
         self.ball = Ball()
-        self.score = 0
         pyxel.sound(0).set("a1", "t", "7742", "v", 8)
         pyxel.run(self.update, self.draw)
 
@@ -131,7 +130,6 @@ class Game:
             self.player.update()
             self.ball.update()
             self.ball.speed = round(2 + (352 - len(self.bricks.layout)) / 352 * 3, 1)
-            self.score += 352 - len(self.bricks.layout)
             self.handleCollisions()
             self.detectWin()
             self.detectGameOver()
@@ -173,7 +171,6 @@ class Game:
         self.player.draw()
         self.bricks.draw()
         self.ball.draw()
-        pyxel.text(10, 10, f"SCORE {self.score}", 7)
 
 
 Game()
