@@ -4,4 +4,4 @@
 
 Using pyxel game engine
 
-_To test the game online click [here](https://kitao.github.io/pyxel/wasm/launcher/?run=rattlessnake.DM-casse-briques)_
+_To test the game online click [here](https://kitao.github.io/pyxel/wasm/launcher/?run=rattlessnake.Brick-Breaker.game)_
